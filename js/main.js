@@ -1,19 +1,21 @@
-var nodes = document.getElementsByClassName('bad-rect');
-nodes = [...nodes];
+var option4 = document.createElement("div");
+option4.innerHTML = "color";
+document.body.appendChild(option4);
 
-for(var i = 0; i < nodes.length; i++){
-        nodes[i].remove();
-    }
+var select = document.createElement("select");
+document.body.appendChild(select);
 
-var elem = document.getElementById('circle1');
-elem.remove();
 
-var greens = document.querySelectorAll('.good-rect');
-greens = [...greens];
+var option1 = document.createElement("option");
+option1.innerHTML = "black";
+select.appendChild(option1);
 
-for(var i = 0; i < greens.length; i++){
-    greens[i].remove();
-}
+var option2 = document.createElement("option");
+option2.innerHTML = "white";
+select.appendChild(option2);
 
-var red = document.getElementById('.circle2');
-red.remove();
+var option3 = document.createElement("option");
+option3.innerHTML = "grey";
+select.appendChild(option3);
+
+
